@@ -1,4 +1,4 @@
-package CoreJava_Package;
+package corejava_package;
 
 public class FirstProgram {
 
