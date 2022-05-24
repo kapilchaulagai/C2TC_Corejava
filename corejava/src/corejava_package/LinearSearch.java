@@ -1,6 +1,7 @@
 package corejava_package;
 import java.util.*;
 public class LinearSearch {
+	
 
 	public static void main(String[] args) {
 		// TODO Linear Search for given number.

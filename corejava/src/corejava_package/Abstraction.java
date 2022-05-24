@@ -11,7 +11,7 @@ abstract class Car
 }
 class Trip extends Car
 {
-	void move()
+	protected void move()
 	{
 		int total = wheels + windows;
 		System.out.println("Car iS moving");
