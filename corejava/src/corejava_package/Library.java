@@ -19,6 +19,7 @@ public class Library {
 class Operation
 {
 	int accNum;
+	int days;
 	String title;
 	String author;
 	Scanner sc = new Scanner(System.in);
@@ -31,12 +32,12 @@ class Operation
 		title = reader.readLine();
 		System.out.println("Enter the Author Name: ");
 		author = reader.readLine();
+		System.out.println("Enter the no. of days late for the submission of book: ");
+		days = sc.nextInt();
 	}
 
 	void compute()
 	{
-		System.out.println("Enter the no. of days late for the submission of book: ");
-		int days = sc.nextInt();
 		int fine = days*5;
 		System.out.println("The fine amount for the book is "+fine+" Rupees only.\n");
 	}
