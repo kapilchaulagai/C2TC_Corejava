@@ -2,7 +2,7 @@ package corejava_package;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
-//use of static keyword and final keyword in variables and methods
+
 public class StaticExmpl {
 	
 	static String name;
@@ -26,8 +26,12 @@ public class StaticExmpl {
 		{
 			System.out.println("The College name is: "+college_name);
 		}
+		else
+		{
+			System.out.println("Invalid Input , GO HOME.");
+			System.exit(0);
+		}
 		System.out.println(message);
-		System.out.println("----------------------------------------------------------");
 	}
 	static void details()throws Exception
 	{
