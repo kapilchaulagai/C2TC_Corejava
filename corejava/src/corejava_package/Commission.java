@@ -16,8 +16,8 @@ class Business
 	String name;
 	String address;
 	long phone;
-	public int sales_amount;
-	public int commission_amount;
+	public double sales_amount;
+	public double commission_amount;
 	Scanner scan = new Scanner(System.in);
 	void input()
 	{
@@ -28,33 +28,28 @@ class Business
 		System.out.println("Enter your Phone Number: ");
 		phone = scan.nextLong();
 	}
-	int calculation()
+	void calculation()
 	{
 		System.out.println("Enter the Sales Amount: ");
 		sales_amount = scan.nextInt();
-		int value = sales_amount;
 		if(sales_amount>=100000)
 		{
-			commission_amount = (10/100)*value;
+			commission_amount = 0.1*sales_amount;
 			System.out.println("The commission amount is: "+commission_amount);
-			return commission_amount;
 		}
 		else if(sales_amount>=50000&&sales_amount<100000)
 		{
-			commission_amount = (5/100)*value;
+			commission_amount = 0.05*sales_amount;
 			System.out.println("The commission amount is: "+commission_amount);
-			return commission_amount;
 		}
 		else if(sales_amount>=30000&&sales_amount<50000)
 		{
-			commission_amount = (3/100)*value;
+			commission_amount = 0.03*sales_amount;
 			System.out.println("The commission amount is: "+commission_amount);
-			return commission_amount;
 		}
 		else
 		{
 			System.out.println("No commission");
-			return commission_amount;
 		}
 	}
 	void display()
