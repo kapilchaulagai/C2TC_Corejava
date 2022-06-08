@@ -20,7 +20,8 @@ public class MultiCatchEx1 {
 		}
 		catch(Exception e1)
 		{
-			System.out.println(e1.getMessage());
+			//System.out.println(e1.getMessage());
+			System.out.println("last Exception");
 		}
 		System.out.println("I am out of try-catch Block.");
 	}

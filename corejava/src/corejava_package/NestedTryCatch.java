@@ -18,13 +18,13 @@ public class NestedTryCatch {
 			catch(ArithmeticException ae)
 			{
 				System.out.println("Execution is thrown.");
-				System.out.println(ae.toString());
+				//System.out.println(ae.toString());
 			}
 		}
 		catch (ArrayIndexOutOfBoundsException abe)
 		{
 			System.out.println("Execution is thrown.");
-			System.out.println(abe.toString());
+			//System.out.println(abe.toString());
 		}
 		System.out.println("I am out of all TRY- CATCH block.");
 	}
