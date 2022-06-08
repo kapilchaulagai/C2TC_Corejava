@@ -11,6 +11,7 @@ public class WithoutExcptn {
 		Scanner scan = new Scanner(System.in);
 		try
 		{
+			System.out.println("inside try before exception");
 			a = 42/d;
 			System.out.println("Will not be printed.");
 		}
