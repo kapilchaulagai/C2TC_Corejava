@@ -1,4 +1,5 @@
 package hackerrank;
+//print the sum of all not repeated elements in array
 import java.util.Arrays;
 import java.util.HashSet;
 //sum of the array elements which is not repeated
