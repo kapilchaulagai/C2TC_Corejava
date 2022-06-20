@@ -25,7 +25,7 @@ public class LinearSearch {
 			if(arr[i]==num)
 			{
 				System.out.println("The number "+num+" is found at "+i+" position.");
-				System.exit(i);
+				System.exit(0);
 			}
 		}
 		System.out.println("Item not found.");
